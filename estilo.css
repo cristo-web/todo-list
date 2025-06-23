@@ -32,20 +32,20 @@ main {
     border-bottom: 1px solid #eee;
 }
 
-.form-group {
+.form-grupo {
     margin-bottom: 15px;
 }
 
-.form-group label {
+.form-grupo label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.form-group input[type="text"],
-.form-group input[type="date"],
-.form-group textarea,
-.form-group select {
+.form-grupo input[type="text"],
+.form-grupo input[type="date"],
+.form-grupo textarea,
+.form-grupo select {
     width: calc(100% - 22px); 
     padding: 10px;
     border: 1px solid #ddd;
@@ -53,17 +53,17 @@ main {
     box-sizing: border-box; 
 }
 
-.form-group textarea {
+.form-grupo textarea {
     resize: vertical; 
 }
 
-.radio-group {
+.radio-grupo {
     display: flex;
     gap: 15px;
     margin-top: 5px;
 }
 
-.radio-group input[type="radio"] {
+.radio-grupo input[type="radio"] {
     margin-right: 5px;
 }
 
@@ -104,7 +104,7 @@ button[type="submit"]:hover {
 
 .tarea-card h3 {
     margin-top: 0;
-    color: #007bff;
+    color: #F7BC34;
 }
 
 .tarea-card p {
@@ -122,10 +122,10 @@ button[type="submit"]:hover {
         padding: 15px;
     }
 
-    .form-group input[type="text"],
-    .form-group input[type="date"],
-    .form-group textarea,
-    .form-group select {
+    .form-grupo input[type="text"],
+    .form-grupo input[type="date"],
+    .form-grupo textarea,
+    .form-grupo select {
         width: calc(100% - 20px);
     }
 }
