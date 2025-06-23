@@ -1,0 +1,4 @@
+documen.addEventListener("DOMContentLoaded"),() => {
+
+}
+
