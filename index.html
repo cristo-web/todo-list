@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de Tareas</title>
-  <link rel="stylesheet" href="estilo.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas - Cristopher Ordoñez</title>
+    <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
+    <header>
+        <h1>Mi Lista de Tareas</h1>
+        <p>Nombre: Cristopher Ordoñez</p>
+    </header>
 
-  <!-- Aquí irá el formulario y la lista generada con JavaScript -->
+    <main>
+        <section class="formulario-tarea">
+            <h2>Agregar Nueva Tarea</h2>
+            <form id="form-tarea">
+                <div class="form-group">
+                    <label for="nombreTarea">Nombre de la Tarea (máx. 25 caracteres):</label>
+                    <input type="text" id="nombreTarea" name="nombreTarea" maxlength="25" required>
+                </div>
 
-  <script src="app.js"></script>
+                <div class="form-group">
+                    <label for="fechaEntrega">Fecha de Entrega:</label>
+                    <input type="date" id="fechaEntrega" name="fechaEntrega" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Seleccione un tipo</option>
+                        <option value="universidad">Universidad</option>
+                        <option value="personal">Personal</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="hobby">Hobby</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Prioridad:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="urgente" name="prioridad" value="urgente" required>
+                        <label for="urgente">Urgente</label>
+                        <input type="radio" id="normal" name="prioridad" value="normal">
+                        <label for="normal">Normal</label>
+                        <input type="radio" id="baja" name="prioridad" value="baja">
+                        <label for="baja">Baja</label>
+                    </div>
+                </div>
+
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+
+        <section class="lista-tareas">
+            <h2>Mis Tareas</h2>
+            <div id="tareas-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
